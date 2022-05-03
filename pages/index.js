@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Layout from '../components/layouts';
 import Hero from '../components/sections/hero'
+import About from '../components/sections/about'
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
 
       <Layout>
         <Hero />
-
+        <About />
       </Layout>
     </div>
   )
