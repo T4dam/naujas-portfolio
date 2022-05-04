@@ -8,7 +8,7 @@ const Layout = ({children}) => {
     <main className='flex-grow h-full'>
         {children}
         </main>
-        <footer className='bg-purple-400 w-full text-center text-white text-[14px]'>
+        <footer className='bg-purple-400 w-full text-center text-white text-[14px] h-8 flex items-center justify-center'>
             &copy;Pavadinimas {new Date().getUTCFullYear()}
         </footer>
       </div>
