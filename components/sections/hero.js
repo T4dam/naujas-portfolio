@@ -34,7 +34,7 @@ const Hero = () => {
   <path strokeLinecap="round" strokeLinejoin="round" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
 </svg>
             </div>
-            <p className='uppercase text-[8px] sm:text-sm leading-3'>Scroll down<br /> to learn more</p>
+            <p className='uppercase text-[8px] leading-3'>Scroll down<br /> to learn more</p>
           </div>
         </div>
        </div>

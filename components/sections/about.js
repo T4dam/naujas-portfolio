@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='h-full w-full bg-slate-900 text-white flex justify-center items-center'>
+    <section className='h-full w-full bg-slate-900 text-white flex justify-center items-center'>
         <div className='container  mt-32 w-full  mx-auto flex justify-center items-center'>
             <div className='flex-col mb-32'>
                 <div className='flex justify-center mb-12 text-4xl font-bold'>About</div>
@@ -40,7 +40,7 @@ const About = () => {
                            </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }
 
