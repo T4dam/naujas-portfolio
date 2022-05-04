@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
+
 const Hero = () => {
   return (
     <section className='bg-gradient-to-b from-purple-400 to-slate-900 md:from-black-500 h-screen -mt-14'>
@@ -28,8 +29,8 @@ const Hero = () => {
            </div>
         <div className='absolute bottom-3 w-full text-white'>
           <div className='flex justify-center'>
-            <div className='flex items-center mr-1 sm:mr-3'>
-            <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+            <div className='flex items-center mr-1 sm:mr-3 scroll'>
+            <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
   <path strokeLinecap="round" strokeLinejoin="round" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
 </svg>
             </div>
