@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TaskyHero = () => {
+const GamedungeonHero = () => {
   return (
     <section className='bg-slate-900 h-full w-full text-white'>
         <div className='container  w-full h-full mx-auto flex p-4 sm:p-0 md:p-4 items-center'>
@@ -10,4 +10,4 @@ const TaskyHero = () => {
   )
 }
 
-export default TaskyHero
+export default GamedungeonHero
