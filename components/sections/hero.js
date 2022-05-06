@@ -11,7 +11,7 @@ const Hero = () => {
                   <div className=' md:flex w-full max-w-6xl gap-y-1 md:gap-20 justify-between items-center'>
                     <div className='text-white text-center md:text-left'>
                               <h2 className='text-2xl'>Hi, there! <br /> I{`'`}m Tadas and I{`'`}m a </h2>
-                              <h1 className='text-4xl sm:text-7xl lg:text-8xl xl:text-9xl font-bold font-black'>
+                              <h1 className='text-4xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold font-black'>
                                 FRONTEND <br />
                                 DEVELOPER
                               </h1>
