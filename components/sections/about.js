@@ -32,7 +32,7 @@ const About = () => {
                  
                 
                  <div className='text-left'>
-                     <button className='shadow-md bg-green-400 p-2 w-44 md:w-72 rounded-[4px] hover:bg-green-300'>
+                     <button className='shadow-md text-black bg-green-400 p-2 w-44 md:w-72 rounded-[4px] hover:bg-green-300'>
                           <p>Say Hello</p>
                         </button>
                  </div>

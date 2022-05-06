@@ -7,33 +7,38 @@ const Navbar = () => {
             title: 'Home',
             url: '/'
         },
-        {
-            title: 'Resume',
-            url: '/resume'
-        },
+        // {
+        //     title: 'Resume',
+        //     url: '/resume'
+        // },
         {
             title: 'Portfolio',
             url: '/portfolio'
         },
-        {
-            title: 'Contacts',
-            url: '/contact'
-        }
+        // {
+        //     title: 'Contacts',
+        //     url: '/contact'
+        // }
     ]
   return (
       
-    <header className='z-50 bg-purple-400 shadow-xl text-white h-14 flex items-center sticky top-0'>
+    <header className='z-50 bg-purple-600 shadow-xl text-white h-14 flex items-center sticky top-0'>
         <nav className='flex mx-auto justify-between container px-6'>
             <div className='flex items-center'>
-                <h2 className='text-xl font-light'>
-                    Logo
-                    </h2>
+                {/* TODO: linko truksta ir logo */}
+                <Link href={'/'}>
+                    <button>
+                        <h2 className='text-xl font-light'>
+                            Ta<span className='font-bold'>Del</span>
+                            </h2>
+                    </button>
+                </Link>
             </div>
             <div className="hidden md:block">
                 {meniu.map((item, i)=>{
                     return (
                         <Link key={i} href={item.url} title={item.title}>
-                            <a className='mx-3 hover:text-yellow-500 transition-color duration-100 ease-in-out'>
+                            <a className='mx-3 hover:text-yellow-300 transition-color duration-100 ease-in-out'>
                             {item.title}
                             </a>
                             </Link>   
