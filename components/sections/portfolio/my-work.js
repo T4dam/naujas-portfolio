@@ -1,23 +1,29 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Mywork = () => {
   const data = [
     {
       title: 'Tasky',
       intro: 'A handy dandy time management tool for planners and time savers. You can easily track your task process with a drag and drop functionality',
-      src: '/images/tasky.jpg'
+      src: '/images/tasky.jpg',
+      alt: 'Task board page',
+      url: '/work/tasky'
     },
     {
       title: 'GameDungeon',
       intro: 'A website for a funky looking fictional company that offers variety of services for gamers and beyond. ',
-      src: '/images/dungeon.jpg'
+      src: '/images/dungeon.jpg',
+      alt:'image of a webpage',
+      url: '/work/gamedungeon'
     },
     {
       title: 'Song cover image',
       intro: 'Collaborated with VeeHouse and famous Lithuanian hip-hop band "Dogma" for a song cover for youtube of their latest single called "Karalius nuogas".',
       src: '/images/dogma.jpeg',
-      alt: 'Song cover photo'
+      alt: 'Song cover photo',
+      url: '/work/cover'
     },
   ]
   return (
@@ -34,9 +40,13 @@ const Mywork = () => {
                           <p className='text-center sm:text-left sm:text-lg leading-7 mb-6'>{item.intro}</p>
                                       
                                    <div className='text-center sm:text-left '>
-                                       <button className='shadow-md bg-green-400 p-2 w-44 md:w-72 rounded-[4px] hover:bg-green-300'>
-                        <p>Learn more</p>
+                                     <Link href={item.url} passHref>
+                                   
+                                         <button className='shadow-md bg-green-400 p-2 w-44 md:w-72 rounded-[4px] hover:bg-green-300'>
+                      Learn more
                       </button>
+                                       
+                                     </Link>
                                    </div>
                     </div>
                     </div>
