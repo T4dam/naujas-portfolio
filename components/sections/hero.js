@@ -12,7 +12,7 @@ const Hero = () => {
                     <div className='text-white text-center md:text-left'>
                               <h2 className='text-2xl'>Hi, there! <br /> I{`'`}m Tadas and I{`'`}m a </h2>
                               <h1 className='text-4xl sm:text-6xl lg:text-8xl xl:text-9xl font-bold font-black'>
-                                FRONTEND <br />
+                                FRONT END <br />
                                 DEVELOPER
                               </h1>
                     </div>

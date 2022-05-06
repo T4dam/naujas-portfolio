@@ -8,8 +8,8 @@ const Navbar = () => {
             url: '/'
         },
         {
-            title: 'About',
-            url: '/'
+            title: 'Resume',
+            url: '/resume'
         },
         {
             title: 'Portfolio',
@@ -17,7 +17,7 @@ const Navbar = () => {
         },
         {
             title: 'Contacts',
-            url: '/'
+            url: '/contact'
         }
     ]
   return (
