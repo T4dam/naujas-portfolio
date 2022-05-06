@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Layout from '../../components/layouts';
+import CoverHero from './../../components/sections/cover/cover-hero';
+import Details from './../../components/sections/cover/details';
 
 const Cover = () => {
   return (
-    <div>Cover</div>
+   <Layout>
+       <CoverHero />
+       <Details/>
+   </Layout>
   )
 }
 
