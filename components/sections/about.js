@@ -31,7 +31,7 @@ const About = () => {
                  <br />
                  
                 
-                 <div className='text-left'>
+                 <div className='text-left flex justify-center sm:justify-start'>
                      <button className='shadow-md text-black bg-green-400 p-2 w-44 md:w-72 rounded-[4px] hover:bg-green-300'>
                           <p>Say Hello</p>
                         </button>

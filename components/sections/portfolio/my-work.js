@@ -52,9 +52,13 @@ const Mywork = () => {
                     </div>
                        <div className='snap-start w-full flex justify-center sm:justify-end items-center'>
                        {/* <Image src="https://uploads-ssl.webflow.com/5ff9747066ed90b013f60409/615288994a29b449db5e33ec_zerohaul-duct-tape-thumbnail.jpg" layout='fill' className='w-[85vw] md:w-[42vw] lg:w-[38vw] xl:w-[40vw]' style="transform: translate3d(0vw, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 1;"  srcset="https://uploads-ssl.webflow.com/5ff9747066ed90b013f60409/615288994a29b449db5e33ec_zerohaul-duct-tape-thumbnail-p-800.jpeg 800w, https://uploads-ssl.webflow.com/5ff9747066ed90b013f60409/615288994a29b449db5e33ec_zerohaul-duct-tape-thumbnail.jpg 1080w" alt="Zerohaul Logistics Logo on Business Cards Floating" class="project-image" /> */}
+                        <Link href={item.url} passHref>
+                         <a>
                         <div className=' bg-green-300 h-[250px] w-[250px] sm:h-[340px] sm:w-[340px] md:h-[420px] md:w-[420px] lg:h-[550px] lg:w-[550px] rounded-3xl max-w-4xl max-h-4xl relative overflow-hidden'>
                           <Image src={item.src} alt={item.alt} layout='fill' objectFit='cover' />
                         </div>
+                         </a>
+                        </Link>
                        </div>
                        </div>
                        <div className='h-1 md:h-1 w-full bg-green-400 my-20'></div>

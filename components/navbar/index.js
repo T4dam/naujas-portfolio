@@ -7,18 +7,18 @@ const Navbar = () => {
             title: 'Home',
             url: '/'
         },
-        // {
-        //     title: 'Resume',
-        //     url: '/resume'
-        // },
+        {
+            title: 'Resume',
+            url: '/resume'
+        },
         {
             title: 'Portfolio',
             url: '/portfolio'
         },
-        // {
-        //     title: 'Contacts',
-        //     url: '/contact'
-        // }
+        {
+            title: 'Contacts',
+            url: '/contact'
+        }
     ]
   return (
       

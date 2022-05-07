@@ -20,8 +20,8 @@ const Hero = () => {
                           <Image className='scale-110'src={'/images/avatar.png'} alt='student programer' layout={'fill'} objectFit='cover'/>
                     </div>
                   </div>
-                  <div className='felx justify-center items-center'>
-                    <button className='shadow-md bg-green-400 p-2 w-44 md:w-72 rounded-[4px] mt-4 hover:bg-green-300'>
+                  <div className='felx justify-center items-center '>
+                    <button className=' shadow-md bg-green-400 p-2 w-44 md:w-72 rounded-[4px] mt-4 hover:bg-green-300'>
                       <p>Say Hello</p>
                     </button>
                   </div>
