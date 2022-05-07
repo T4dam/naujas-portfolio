@@ -12,12 +12,12 @@ const PorfolioHero = () => {
             </div>
             <div className='absolute bottom-3 w-full text-white'>
           <div className='flex justify-center'>
-            <div className='flex items-center mr-1 sm:mr-3 scroll'>
+            {/* <div className='flex items-center mr-1 sm:mr-3 scroll'>
             <svg xmlns="http://www.w3.org/2000/svg" className="animate-bounce w-5 h-5 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
   <path strokeLinecap="round" strokeLinejoin="round" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
 </svg>
             </div>
-            <p className='uppercase text-[8px] leading-3'>Scroll down<br /> to learn more</p>
+            <p className='uppercase text-[8px] leading-3'>Scroll down<br /> to learn more</p> */}
           </div>
         </div>
         </div>
