@@ -1,7 +1,11 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
+import Screendrop from './screendrop';
+import { useState } from 'react';
 
 const Navbar = () => {
+    // const [ open, setOpen ]= useState(false)
+
     const meniu = [
         {
             title: 'Home',
@@ -20,6 +24,12 @@ const Navbar = () => {
             url: '/contact'
         }
     ]
+    
+    const [open, setOpen ]=useState(false)
+    const handleOpen = () => {
+       setOpen(!open);
+    };
+
   return (
       
     <header className='z-50 bg-purple-600 shadow-xl text-white h-14 flex items-center sticky top-0'>
@@ -45,8 +55,12 @@ const Navbar = () => {
                     )
                 })}
             </div>
-            <div className='md:hidden'>
-                <button className=' w-12 h-12 flex justify-center items-center'>
+            <div className='md:hn idden'>
+            {
+                open &&
+                <Screendrop onClick={handleOpen}></Screendrop>
+            }
+            <button className=' w-12 h-12 flex justify-center items-center' onClick={handleOpen}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>

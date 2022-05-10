@@ -4,6 +4,8 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
+    <>
+   
     <section className='bg-gradient-to-b from-purple-600 to-slate-900 md:from-black-500 h-screen min-h-[500px] -mt-14'>
        <div className='container mx-auto pt-14 h-full relative'>
            <div className=' h-full w-full flex justify-center items-center'>
@@ -41,6 +43,7 @@ const Hero = () => {
         </div>
        </div>
         </section>
+    </>
   )
 }
 
