@@ -28,7 +28,7 @@ const Mywork = () => {
   ]
   return (
     <section className='h-full w-full bg-slate-900 text-white flex justify-center items-center'>
-    <div className='container snap-y snap-mandatory overflow-scroll max-w-6xl mt-32 w-full  p-4 mx-auto'>
+    <div className='container snap-y snap-mandatory -mt-48 overflow-scroll max-w-6xl mt-32 w-full  p-4 mx-auto'>
         {data.map((item, i)=> {
             return (
         <div key={i} className='flex-col '>

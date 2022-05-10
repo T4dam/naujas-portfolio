@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 const Details = () => {
   return (
-    <section className='bg-slate-900 h-full w-full text-white'>
+    <section className='bg-slate-900 h-full w-full  text-white'>
     <div className='container w-full h-full mx-auto flex p-4 sm:p-0 md:p-4 items-center max-w-6xl'>
-        <div className='w-full flex flex-col md:flex-row justify-between items-center mb-12'>
+        <div className='w-full flex flex-col -mt-60 md:flex-row justify-between items-center mb-12'>
             <div className='w-[250px] h-[250px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px]lg:w-[700px] lg:h-[700px] relative'>
                 <Image src='/images/resume.svg' alt='Illustrtion of CV document' layout='fill' /> 
             </div>
