@@ -13,7 +13,7 @@ const ScreenDrop = ({open, setOpen}) => {
           <path strokeLinecap="round" strokeLinejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
           </button>
-          <div className='flex flex-col items-center gap-12 relative top-[25%] w-[100%] text-center mt-[30px] text-4xl'>
+          <div className='flex flex-col items-center justify-center gap-12 relative top-[25%] w-[100%] text-center mt-[30px] text-4xl'>
           <Link href={'/'} passHref><button className='p-1 w-48'><a>Home</a></button></Link>
           <Link href={'/resume'} passHref><button className='p-1 w-48'><a>Resume</a></button></Link>
           <Link href={'/portfolio'} passHref><button className='p-1 w-48'><a>Portfolio</a></button></Link>
