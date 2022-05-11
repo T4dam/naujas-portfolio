@@ -9,20 +9,21 @@ const variants = {
 }
 
 const Layout = ({children}) => {
-  return (
+
+    return (
       <div className='w-full flex flex-col justify-between min-h-screen'>
-            <Navbar />
-    <motion.main 
+          <Navbar />
+          <motion.main
     initial="hidden"
             animate="enter"
             exit="exit"
             variants={variants}
             transition={{ type: 'linear' }} className='flex-grow h-full'>
-        {children}
-        </motion.main>
-        <footer className='bg-purple-900 w-full text-center text-white text-[14px] h-8 flex items-center justify-center'>
-            &copy; Ta<span className='font-black mr-1'>Del</span>  {new Date().getUTCFullYear()}
-        </footer>
+              {children}
+              <footer className='bg-purple-900 w-full text-center text-white text-[14px] h-8 flex items-center justify-center'>
+                  &copy; Ta<span className='font-black mr-1'>Del</span>  {new Date().getUTCFullYear()}
+              </footer>
+          </motion.main>
       </div>
   )
 }
