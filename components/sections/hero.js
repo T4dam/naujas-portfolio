@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import MainButton from './../button/main-button';
 
 
 const Hero = () => {
@@ -20,9 +21,8 @@ const Hero = () => {
                                 </h1>
                       </div>
                   <div className=''>
-                    <button className=' shadow-md bg-green-400 p-2 w-44 md:w-72 rounded-[4px] mt-4 hover:bg-green-300'>
-                      <p>Say Hello</p>
-                    </button>
+                    
+                    <MainButton link={'/portfolio'} text={'View my portfolio'} />
                   </div>
                     </div>
                     <div className='m-auto mt-5 md:mt-0 md:mr-0 mshrink-0 bg-gradient-to-br from-pink-500 via-sky-500 to-sky-700 border-8 w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:h-80 xl:w-80 bg-red-600 rounded-full overflow-hidden relative'>

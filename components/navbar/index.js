@@ -19,10 +19,10 @@ const Navbar = () => {
             title: 'Portfolio',
             url: '/portfolio'
         },
-        {
-            title: 'Contacts',
-            url: '/contact'
-        }
+        // {
+        //     title: 'Contacts',
+        //     url: '/contact'
+        // }
     ]
     
     const [open, setOpen ]=useState(false)
@@ -56,7 +56,7 @@ const Navbar = () => {
                     )
                 })}
             </div>
-            <div className='md:hn idden'>
+            <div className='md:hidden'>
             <button className=' w-12 h-12 flex justify-center items-center' onClick={handleToggle}>
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16m-7 6h7" />

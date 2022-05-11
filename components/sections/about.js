@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import MainButton from './../button/main-button';
 
 const About = () => {
   return (
@@ -32,9 +33,7 @@ const About = () => {
                  
                 
                  <div className='text-left flex justify-center sm:justify-start'>
-                     <button className='shadow-md text-black bg-green-400 p-2 w-44 md:w-72 rounded-[4px] hover:bg-green-300'>
-                          <p>Say Hello</p>
-                        </button>
+                 <MainButton link={'/resume'} text={'Check out my resume'} />
                  </div>
                            </div>
                            </div>

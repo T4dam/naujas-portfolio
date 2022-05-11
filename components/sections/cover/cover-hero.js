@@ -15,7 +15,7 @@ const CoverHero = () => {
                 </Link>
             </div>
             <div className='bg-green-300 h-[500px] w-full max-w-5xl mx-auto  mt-14 mb-24 relative rounded-xl overflow-hidden'>
-                <Image src='/images/dogma.jpeg' alt='Cover art of Dogma group members' layout='fill' objectFit='cover' />
+                <Image src='/images/dogma.jpeg' alt='Cover art of Dogma group members' layout='fill' objectFit='cover' loading='eager' />
             </div>
         </div>
     </section>

@@ -55,7 +55,7 @@ const Mywork = () => {
                         <Link href={item.url} passHref>
                          <a>
                         <div className=' bg-green-300 h-[250px] w-[250px] sm:h-[340px] sm:w-[340px] md:h-[420px] md:w-[420px] lg:h-[550px] lg:w-[550px] rounded-3xl max-w-4xl max-h-4xl relative overflow-hidden'>
-                          <Image src={item.src} alt={item.alt} layout='fill' objectFit='cover' />
+                          <Image src={item.src} alt={item.alt} layout='fill' objectFit='cover' loading='eager' />
                         </div>
                          </a>
                         </Link>
