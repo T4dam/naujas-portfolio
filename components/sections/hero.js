@@ -26,7 +26,7 @@ const Hero = () => {
                   </div>
                     </div>
                     <div className='m-auto mt-5 md:mt-0 md:mr-0 mshrink-0 bg-gradient-to-br from-pink-500 via-sky-500 to-sky-700 border-8 w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:h-80 xl:w-80 bg-red-600 rounded-full overflow-hidden relative'>
-                          <Image className='scale-110'src={'/images/avatar.png'} alt='student programer' layout={'fill'} objectFit='cover'/>
+                          <Image className='scale-110'src={'/images/avatar.png'} alt='student programer' layout={'fill'} objectFit='cover' loading='eager'/>
                     </div>
                   </div>
                 </div>
