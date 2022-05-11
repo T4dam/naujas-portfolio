@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import MainButton from '../../button/main-button';
 
 const Mywork = () => {
   const data = [
@@ -40,13 +41,7 @@ const Mywork = () => {
                           <p className='text-center sm:text-left sm:text-lg leading-7 mb-6'>{item.intro}</p>
                                       
                                    <div className='text-center sm:text-left '>
-                                     <Link href={item.url} passHref>
-                                   
-                                         <button className='shadow-md bg-green-400 p-2 w-44 md:w-72 rounded-[4px] hover:bg-green-300'>
-                      Learn more
-                      </button>
-                                       
-                                     </Link>
+                                   <MainButton link={item.url} text={'Learn more'} />
                                    </div>
                     </div>
                     </div>

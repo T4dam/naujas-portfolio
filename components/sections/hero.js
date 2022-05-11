@@ -20,7 +20,7 @@ const Hero = () => {
                                   DEVELOPER
                                 </h1>
                       </div>
-                  <div className=''>
+                  <div className='mt-3 md:mt-4'>
                     
                     <MainButton link={'/portfolio'} text={'View my portfolio'} />
                   </div>
