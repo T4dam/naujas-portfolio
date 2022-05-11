@@ -13,7 +13,7 @@ const Mywork = () => {
       url: '/work/tasky'
     },
     {
-      title: 'GameDungeon',
+      title: 'Game Dungeon',
       intro: 'A website for a funky looking fictional company that offers variety of services for gamers and beyond. ',
       src: '/images/dungeon.jpg',
       alt:'image of a webpage',
@@ -29,16 +29,16 @@ const Mywork = () => {
   ]
   return (
     <section className='h-full w-full bg-slate-900 text-white flex justify-center items-center'>
-    <div className='container snap-y snap-mandatory -mt-48 overflow-scroll max-w-6xl mt-32 w-full  p-4 mx-auto'>
+    <div className='container snap-y snap-mandatory -mt-48 overflow-scroll max-w-[640px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:lg:max-w-[1152px] mt-32 w-full  p-4 mx-auto'>
         {data.map((item, i)=> {
             return (
         <div key={i} className='flex-col '>
             {/* <div className='flex justify-center mb-12 text-4xl font-bold'>About</div> */}
-                       <div className=' w-full h-auto text-center md:text-center flex flex-col sm:flex-row gap-12 justify-between'>
+                       <div className=' w-full h-auto text-center md:text-center flex flex-col sm:flex-row gap-8 max-gap-12 justify-between'>
                     <div className='flex justify-center sm:justify-start items-center snap-center'>
-                      <div className='max-w-[84%]'>
+                      <div className=' max-w-full '>
                           <h3 className='text-4xl md:text-6xl font-black text-center sm:text-left mb-6'>{item.title}</h3>
-                          <p className='text-center sm:text-left sm:text-lg leading-7 mb-6'>{item.intro}</p>
+                          <p className='max-w-[360px] md:max-w-[400px] sm:w-full text-center sm:text-left sm:text-lg leading-7 mb-6'>{item.intro}</p>
                                       
                                    <div className='text-center sm:text-left '>
                                    <MainButton link={item.url} text={'Learn more'} />

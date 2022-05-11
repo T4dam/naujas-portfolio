@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const Navbar = () => {
     // const [ open, setOpen ]= useState(false)
-
+    
     const meniu = [
         {
             title: 'Home',
@@ -40,7 +40,7 @@ const Navbar = () => {
                 <Link href={'/'}>
                     <button>
                         <h2 className='text-xl font-light'>
-                            Ta<span className='font-bold'>Del</span>
+                            Ta<span className='font-bold'>Dam</span>
                             </h2>
                     </button>
                 </Link>

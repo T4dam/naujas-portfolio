@@ -1,8 +1,10 @@
 // import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const ScreenDrop = ({open, setOpen}) => {
-  
+    const router = useRouter();
+
   return (
       <>
       { open ?
@@ -16,13 +18,17 @@ const ScreenDrop = ({open, setOpen}) => {
           <div className=' flex flex-col items-center justify-center gap-5 relative top-[25%] w-[100%] text-center mt-[30px] text-4xl font-extrabold '>
           <ul className=' list-none  transition-all ease-in  duration-300'>
               <li className=''>
-                  <Link href={'/'} passHref><button className='bg-red-200 p-1 w-48'><a>Home</a></button></Link>
+                  {
+                      router.pathname === '/' ?
+                      <button onClick={() => setOpen(false)} className=' p-1 w-48 mb-3 font-black dark:text-white'><a>Home</a></button> :
+                      <Link href={'/'} passHref><button className=' p-1 w-48 mb-3 font-black dark:text-white'><a>Home</a></button></Link>
+                  }
               </li>
               <li className=''>
-                  <Link href={'/resume'} passHref><button className='bg-red-200 p-1 w-48'><a>Resume</a></button></Link>
+                  <Link href={'/resume'} passHref><button className=' p-1 w-48 mb-3 font-black dark:text-white'><a>Resume</a></button></Link>
               </li>
               <li className=''>
-                  <Link href={'/portfolio'} passHref><button className='bg-red-200 p-1 w-48'><a>Portfolio</a></button></Link>
+                  <Link href={'/portfolio'} passHref><button className=' p-1 w-48 font-black dark:text-white'><a>Portfolio</a></button></Link>
               </li>
           </ul>
           </div>
