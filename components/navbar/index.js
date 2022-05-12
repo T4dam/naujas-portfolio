@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
       
     <header className='z-50 bg-purple-600 shadow-xl text-white h-14 flex items-center sticky top-0'>
-        <nav className='flex mx-auto justify-between container px-6'>
+        <nav className='flex items-center mx-auto justify-between container px-6'>
             <div className='flex items-center gap-1 w-32'>
                 <Link href={'/'}>
                     <a className='flex jusitfy-start w-8 h-8 relative'>
@@ -57,7 +57,7 @@ const Navbar = () => {
                 {meniu.map((item, i)=>{
                     return (
                         <Link key={i} href={item.url} title={item.title}>
-                            <a className='mx-3 hover:text-yellow-300 transition-color duration-100 ease-in-out'>
+                            <a className='mx-3 hover:underline hover:underline-offset-4 transition-color duration-100 ease-in-out'>
                             {item.title}
                             </a>
                             </Link>   
