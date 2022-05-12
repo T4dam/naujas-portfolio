@@ -14,7 +14,7 @@ const Details = () => {
                   <div className='font-bold  text-4xl mb-3 text-end sm:text-left'>A developer who was raised from sales and a lot of coffee.</div>
                   <div className='flex-grow text-justify sm:text-left mb-4'>Front-end developer with a desire to write quality code and to create
                   an amazing user experience. I{`'`}m looking for opportunities to grow and create something meaningful.
-                  <br />If you feel like you{`'`}re looking to hire someone like me, please don{`'`}t be hesitate. Grab a copy of
+                  <br />If you feel like you{`'`}re looking to hire someone like me, please don{`'`}t hesitate. Grab a copy of
                   my resume and let{`'`}s talk.</div>
                         <a href ="/Tadas_Delininkaitis_CV.pdf" attributes-list download>
                   <button className=' mx-auto md:m-0 shadow-md bg-green-400 p-2 w-44 md:w-72 rounded-[4px] mt-4 hover:bg-green-300 flex justify-center items-center text-slate-900'>

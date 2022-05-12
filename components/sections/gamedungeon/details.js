@@ -19,10 +19,10 @@ const Details = () => {
                             <div className='flex self-center sm:self-start h-1 w-full sm:w-32 bg-green-400 mt-3'></div>
                </div>
                <div className='flex flex-col'>
-                   <div className='text-2xl font-bold mb-2'>Gamedungeon - cloud services for gamers</div> 
+                   <div className='text-2xl font-bold mb-2'>Game dungeon - cloud services for gamers</div> 
                    <div className='text-lg text-justify sm:text-left'> This is my very first website I ever made. I chose to create a website for a fictional company that offers cloud based gaming services.
 
-                   This may seem like a small step but in terms of my of my career as a developer it meant {`"`}Hello world{`"`}.
+                   This may seem like a small step but in terms of my career as a developer it meant {`"`}Hello world{`"`}.
 
           <br />
           <br />

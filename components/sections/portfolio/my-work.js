@@ -7,7 +7,7 @@ const Mywork = () => {
   const data = [
     {
       title: 'Tasky',
-      intro: 'A handy dandy time management tool for planners and time savers. You can easily track your task process with a drag and drop functionality',
+      intro: 'A handy dandy time management tool for planners and time savers. You can easily track your task process with a drag and drop functionality.',
       src: '/images/tasky.jpg',
       alt: 'Task board page',
       url: '/work/tasky'
