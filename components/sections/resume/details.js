@@ -11,7 +11,7 @@ const Details = () => {
             </div>
             <div className='basis-full'>
               <div className='flex-col justify-center items-center mx-auto max-w-[370px] lg:max-w-[420px]'>
-                  <div className='font-bold  text-4xl mb-3 text-end sm:text-left'>A developer who was raised from sales and a lot of coffee.</div>
+                  <div className='font-bold  text-4xl mb-3 text-end sm:text-left'>A developer with a passion for code</div>
                   <div className='flex-grow text-justify sm:text-left mb-4'>Front-end developer with a desire to write quality code and to create
                   an amazing user experience. I{`'`}m looking for opportunities to grow and create something meaningful.
                   <br />If you feel like you{`'`}re looking to hire someone like me, please don{`'`}t hesitate. Grab a copy of
