@@ -20,10 +20,10 @@ const Layout = ({children}) => {
             variants={variants}
             transition={{ type: 'linear' }} className='flex-grow h-full'>
               {children}
-              <footer className='bg-purple-900 w-full text-center text-white text-[14px] h-8 flex items-center justify-center'>
+          </motion.main>
+          <footer className='bg-purple-900 w-full text-center text-white text-[14px] h-8 flex items-center justify-center'>
                   &copy; Ta<span className='font-black mr-1'>Del</span>  {new Date().getUTCFullYear()}
               </footer>
-          </motion.main>
       </div>
   )
 }

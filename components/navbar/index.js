@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Screendrop from './screendrop';
 import { useState } from 'react';
+import Image from 'next/image';
 
 const Navbar = () => {
     // const [ open, setOpen ]= useState(false)
@@ -38,11 +39,12 @@ const Navbar = () => {
             <div className='flex items-center'>
                 {/* TODO: linko truksta ir logo */}
                 <Link href={'/'}>
-                    <button>
+                    <a className='flex jusitfy-start w-32 h-auto relative'>
+                    {/* <Image src={'/images/logo2.svg'} alt={'logo'} layout='fill' objectFit='fill' loading='eager' /> */}
                         <h2 className='text-xl font-light'>
-                            Ta<span className='font-bold'>Dam</span>
+                            Ta<span className='font-bold'>Del</span>
                             </h2>
-                    </button>
+                    </a>
                 </Link>
             </div>
             <div className="hidden md:block">

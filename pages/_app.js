@@ -8,6 +8,8 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Tadam.lt</title>
         <meta name="description" content="Tadas' portfolio" />
+        <meta name="theme-color" content="#9333ea" />
+
         <link rel="icon" href="/images/logo1.png" />
       </Head>
       <AnimatePresence
