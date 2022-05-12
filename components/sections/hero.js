@@ -14,13 +14,13 @@ const Hero = () => {
                   <div className=' flex flex-col-reverse md:flex md:flex-row w-full max-w-6xl gap-y-1 md:gap-20 justify-between items-center'>
                     <div className='flex flex-col items-center md:items-start'>
                       <div className='text-white text-center md:text-left'>
-                                <h2 className='text-lg md:text-2xl'>Hi, there! <br /> I{`'`}m Tadas and I{`'`}m a </h2>
+                                <h2 className='text-lg md:text-2xl lg:pl-1'>Hi, there! <br /> I{`'`}m Tadas and I{`'`}m a </h2>
                                 <h1 className='text-4xl sm:text-5xl lg:text-8xl xl:text-9xl font-bold font-black'>
                                   FRONT-END <br />
                                   DEVELOPER
                                 </h1>
                       </div>
-                  <div className='mt-3 md:mt-4'>
+                  <div className='mt-3 md:mt-4 lg:pl-1'>
                     
                     <MainButton link={'/portfolio'} text={'View my portfolio'} />
                   </div>
