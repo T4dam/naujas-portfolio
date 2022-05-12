@@ -36,14 +36,20 @@ const Navbar = () => {
       
     <header className='z-50 bg-purple-600 shadow-xl text-white h-14 flex items-center sticky top-0'>
         <nav className='flex mx-auto justify-between container px-6'>
-            <div className='flex items-center'>
-                {/* TODO: linko truksta ir logo */}
+            <div className='flex items-center gap-1 w-32'>
                 <Link href={'/'}>
-                    <a className='flex jusitfy-start w-32 h-auto relative'>
-                    {/* <Image src={'/images/logo2.svg'} alt={'logo'} layout='fill' objectFit='fill' loading='eager' /> */}
-                        <h2 className='text-xl font-light'>
-                            Ta<span className='font-bold'>Del</span>
-                            </h2>
+                    <a className='flex jusitfy-start w-8 h-8 relative'>
+                    <div>
+                        <Image src={'/images/logo3.png'} alt={'logo'} layout='fill' objectFit='fill' loading='eager' />
+                    </div>
+                        
+                    </a>
+                </Link>
+                <Link href={'/'}>
+                    <a className=''>
+                            <h2 className='text-xl font-light'>
+                                Ta<span className='font-bold'>Del</span>
+                                </h2>
                     </a>
                 </Link>
             </div>
