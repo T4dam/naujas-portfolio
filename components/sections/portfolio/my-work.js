@@ -29,7 +29,7 @@ const Mywork = () => {
   ]
   return (
     <section className='h-full w-full bg-slate-900 text-white flex justify-center items-center'>
-    <div className='container snap-y snap-mandatory overflow-scroll max-w-[640px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:lg:max-w-[1152px]  w-full mt-24 p-4 mx-auto'>
+    <div className='container max-w-[640px] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:lg:max-w-[1152px]  w-full mt-24 p-4 mx-auto'>
         {data.map((item, i)=> {
             return (
         <div key={i} className='flex-col '>
