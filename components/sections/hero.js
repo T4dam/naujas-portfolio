@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import MainButton from './../button/main-button';
-
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -13,21 +13,37 @@ const Hero = () => {
                 <div className='flex flex-col justify-center items-center md:items-start'>
                   <div className=' flex flex-col-reverse md:flex md:flex-row w-full max-w-6xl gap-y-1 md:gap-20 justify-between items-center'>
                     <div className='flex flex-col items-center md:items-start'>
-                      <div className='text-white text-center md:text-left'>
-                                <h2 className='text-lg md:text-2xl lg:pl-1'>Hi, there! <br /> I{`'`}m Tadas and I{`'`}m a </h2>
-                                <h1 className='text-4xl sm:text-5xl lg:text-8xl xl:text-9xl font-bold font-black'>
-                                  FRONT-END <br />
-                                  DEVELOPER
-                                </h1>
-                      </div>
+                      <motion.div initial="hidden" animate="visible" variants={{
+                        hidden: {
+                          scale: .8,
+                          opacity: 0
+                        },
+                        visible: {
+                          scale: 1,
+                          opacity: 1,
+                          transition: {
+                            delay: .4
+                          }
+                        }
+                      }}>
+                        <div className='text-white text-center md:text-left'>
+                                  <h2 className='text-lg md:text-2xl lg:pl-1'>Hi, there! <br /> I{`'`}m Tadas and I{`'`}m a </h2>
+                                  <h1 className='text-4xl sm:text-5xl lg:text-8xl xl:text-9xl font-bold font-black'>
+                                    FRONT-END <br />
+                                    DEVELOPER
+                                  </h1>
+                        </div>
+                      </motion.div>
                   <div className='mt-3 md:mt-4 lg:pl-1'>
                     
                     <MainButton link={'/portfolio'} text={'View my portfolio'} />
                   </div>
                     </div>
-                    <div className='m-auto mt-5 md:mt-0 md:mr-0 mshrink-0 bg-gradient-to-br from-pink-500 via-sky-500 to-sky-700 border-8 w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:h-80 xl:w-80 bg-red-600 rounded-full overflow-hidden relative'>
-                          <Image className='scale-110'src={'/images/avatar.png'} alt='student programer' layout={'fill'} objectFit='cover' loading='eager'/>
-                    </div>
+                    <motion.div initial={{x:-550}} animate={{x:0, delay: .12}}>
+                      <div className='m-auto mt-5 md:mt-0 md:mr-0 mshrink-0 bg-gradient-to-br from-pink-500 via-sky-500 to-sky-700 border-8 w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:h-80 xl:w-80 bg-red-600 rounded-full overflow-hidden relative'>
+                            <Image className='scale-110'src={'/images/avatar.png'} alt='student programer' layout={'fill'} objectFit='cover' loading='eager'/>
+                      </div>
+                    </motion.div>
                   </div>
                 </div>
            </div>
