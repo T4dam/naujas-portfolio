@@ -1,31 +1,14 @@
 import React from 'react';
 import MainButton from './../button/main-button';
-import  { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
-const squareVariants = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
-  hidden: { opacity: 0, scale: 0 }
-};
+
 const About = () => {
-  const controls = useAnimation();
-  const [ref, inView] = useInView();
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
   return (
     <section className='h-full w-full bg-slate-900 text-white flex justify-center items-center'>
         <div className='container  mt-32 w-full  mx-auto flex justify-center items-center'>
-            <motion.div ref={ref}
-                                  animate={controls}
-                                  initial="hidden"
-                                  variants={squareVariants} className='flex-col mb-32'>
+            <div className='flex-col mb-32'>
                 <div className='flex justify-center mb-12 text-4xl font-bold'>About</div>
-                           <div
-                                  className=' w-full max-w-6xl h-auto text-center md:text-center flex flex-col md:flex-row gap-12 justify-between'>
+                           <div className=' w-full max-w-6xl h-auto text-center md:text-center flex flex-col md:flex-row gap-12 justify-between'>
                         <div className='w-full md:w-1/2'>
                             <h3 className='text-3xl md:text-3xl font-bold md:text-left p-4'>Quality is remembered  <br className='' /> long after price is forgotten</h3>
                             <figcaption>
@@ -55,7 +38,7 @@ const About = () => {
                  </div>
                            </div>
                            </div>
-            </motion.div>
+            </div>
         </div>
     </section>
   )
