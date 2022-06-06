@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Layout from '../components/layouts';
 import Hero from '../components/sections/hero'
 import About from '../components/sections/about'
