@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+// import React, {useState, useEffect} from 'react';
 import '../styles/globals.css'
 import Head from 'next/head';
 import { AnimatePresence } from 'framer-motion'
@@ -7,9 +7,9 @@ import { AnimatePresence } from 'framer-motion'
 function MyApp({ Component, pageProps }) {
   // const [loading, setLoading] = React.useState(false);
 
-  useEffect(() => {
-    setLoading(true);
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  // }, []);
 
   return (
     <>
