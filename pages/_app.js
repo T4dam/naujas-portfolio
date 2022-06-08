@@ -1,15 +1,15 @@
-// import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../styles/globals.css'
 import Head from 'next/head';
 import { AnimatePresence } from 'framer-motion'
-// import Loader from '../components/loader';
+import Loader from '../components/loader';
 
 function MyApp({ Component, pageProps }) {
-  // const [loading, setLoading] = React.useState(false);
+  const [loading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  // }, []);
+ useEffect(() =>{
+    setTimeout(() => setLoading(true), 2300);
+   })
 
   return (
     <>
@@ -20,14 +20,16 @@ function MyApp({ Component, pageProps }) {
 
         <link rel="icon" href="/images/logo-purple.png" />
       </Head>
-      <AnimatePresence
+      {loading
+      ? (<AnimatePresence
                 exitBeforeEnter
                 initial={true}
                 onExitComplete={() => window.scrollTo(0, 0)}
             >
+              <Component {...pageProps} />
+            </AnimatePresence>)
 
-      <Component {...pageProps} />
-            </AnimatePresence>
+      : (<Loader />)}
     </>
   )
 }
