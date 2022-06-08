@@ -1,8 +1,16 @@
+import React, {useState, useEffect} from 'react';
 import '../styles/globals.css'
 import Head from 'next/head';
 import { AnimatePresence } from 'framer-motion'
+// import Loader from '../components/loader';
 
 function MyApp({ Component, pageProps }) {
+  // const [loading, setLoading] = React.useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+  }, []);
+
   return (
     <>
       <Head>
@@ -14,7 +22,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <AnimatePresence
                 exitBeforeEnter
-                initial={false}
+                initial={true}
                 onExitComplete={() => window.scrollTo(0, 0)}
             >
 
