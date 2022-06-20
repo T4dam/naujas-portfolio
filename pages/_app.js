@@ -14,10 +14,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Tadam.lt Front-end Developer</title>
+        <title>Tadel.lt Front-end Developer</title>
         <meta name="description" content="Tadas' portfolio" />
         <meta name="theme-color" content="#9333ea" />
-
         <link rel="icon" href="/images/logo-purple.png" />
       </Head>
       {loading
