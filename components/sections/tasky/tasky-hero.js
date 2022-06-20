@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import tasky from '/public/images/taskyClose.jpg'
 
 const TaskyHero = () => {
   return (
@@ -24,8 +25,8 @@ const TaskyHero = () => {
                     </svg>Go back</button>
                 </Link>
             </motion.div>
-            <div className='bg-green-300 h-[500px] w-full max-w-5xl mx-auto  mt-14 mb-24 rounded-xl overflow-hidden relative'>
-            <Image src='/images/taskyClose.jpg' alt='Website photo cover' layout='fill' objectFit='cover' /> 
+            <div className='h-[500px] w-full max-w-5xl mx-auto  mt-14 mb-24 rounded-xl overflow-hidden relative'>
+            <Image src={tasky} alt='Website photo cover' layout='fill' objectFit='cover' loading='lazy' placeholder='blur' /> 
             </div>
         </div>
     </section>

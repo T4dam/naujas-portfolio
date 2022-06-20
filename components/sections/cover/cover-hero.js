@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import dogma from '/public/images/dogma.jpeg';
 
 const CoverHero = () => {
   return (
@@ -24,8 +25,8 @@ const CoverHero = () => {
                     </svg>Go back</button>
                 </Link>
             </motion.div>
-            <div className='bg-green-300 h-[500px] w-full max-w-5xl mx-auto  mt-14 mb-24 relative rounded-xl overflow-hidden'>
-                <Image src='/images/dogma.jpeg' alt='Cover art of Dogma group members' layout='fill' objectFit='cover' loading='eager' />
+            <div className='h-[500px] w-full max-w-5xl mx-auto  mt-14 mb-24 relative rounded-xl overflow-hidden'>
+                <Image src={dogma} alt='Cover art of Dogma group members' layout='fill' objectFit='cover' loading={'lazy'} placeholder="blur" />
             </div>
         </div>
     </section>

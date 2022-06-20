@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {motion} from 'framer-motion';
-
+import gameDungeonCover from '/public/images/dungeon-photo.jpg';
 const GamedungeonHero = () => {
   return (
     <section className='bg-slate-900 h-full w-full text-white'>
@@ -26,8 +26,8 @@ const GamedungeonHero = () => {
                 </Link>
             </motion.div>
            
-            <div className='bg-green-300 h-[500px] w-full max-w-5xl mx-auto  mt-14 mb-24 rounded-xl relative overflow-hidden'>
-                <Image src='/images/dungeon-photo.jpg' alt='Website photo cover' layout='fill' objectFit='cover' loading='eager'/> 
+            <div className=' h-[500px] w-full max-w-5xl mx-auto  mt-14 mb-24 rounded-xl relative overflow-hidden'>
+                <Image src={gameDungeonCover} alt='Website photo cover' layout='fill' objectFit='cover' loading={'lazy'} placeholder='blur'/> 
             </div>
           
         </div>
