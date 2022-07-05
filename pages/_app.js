@@ -26,9 +26,9 @@ function MyApp({ Component, pageProps }) {
 					initial={true}
 					onExitComplete={() => window.scrollTo(0, 0)}
 				>
-					{useEffect(() => {
+					{/* {useEffect(() => {
 						TagManager.initialize({ gtmId: 'GTM-N2MZZMB' });
-					}, [])}
+					}, [])} */}
 					<Component {...pageProps} />
 				</AnimatePresence>
 			) : (
