@@ -36,16 +36,6 @@ function MyApp({ Component, pageProps }) {
 					initial={true}
 					onExitComplete={() => window.scrollTo(0, 0)}
 				>
-					{/* <!-- Google Tag Manager (noscript) --> */}
-					<noscript>
-						<iframe
-							src="https://www.googletagmanager.com/ns.html?id=GTM-N2MZZMB"
-							height="0"
-							width="0"
-							style="display:none;visibility:hidden"
-						></iframe>
-					</noscript>
-					{/* <!-- End Google Tag Manager (noscript) --> */}
 					<Component {...pageProps} />
 				</AnimatePresence>
 			) : (
