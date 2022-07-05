@@ -9,6 +9,10 @@ function MyApp({ Component, pageProps }) {
 	const [loading, setLoading] = useState(false);
 
 	useEffect(() => {
+		TagManager.initialize({ gtmId: 'GTM-N2MZZMB' });
+	}, []);
+
+	useEffect(() => {
 		setTimeout(() => setLoading(true), 2300);
 	});
 
@@ -26,9 +30,6 @@ function MyApp({ Component, pageProps }) {
 					initial={true}
 					onExitComplete={() => window.scrollTo(0, 0)}
 				>
-					{/* {useEffect(() => {
-						TagManager.initialize({ gtmId: 'GTM-N2MZZMB' });
-					}, [])} */}
 					<Component {...pageProps} />
 				</AnimatePresence>
 			) : (
