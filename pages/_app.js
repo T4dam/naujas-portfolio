@@ -3,14 +3,10 @@ import '../styles/globals.css';
 import Head from 'next/head';
 import { AnimatePresence } from 'framer-motion';
 import Loader from '../components/loader';
-import TagManager from 'react-gtm-module';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }) {
 	const [loading, setLoading] = useState(false);
-
-	useEffect(() => {
-		TagManager.initialize({ gtmId: 'GTM-N2MZZMB' });
-	}, []);
 
 	useEffect(() => {
 		setTimeout(() => setLoading(true), 2300);
@@ -30,6 +26,17 @@ function MyApp({ Component, pageProps }) {
 					initial={true}
 					onExitComplete={() => window.scrollTo(0, 0)}
 				>
+					{/* <Script
+						strategy="afterInteractive"
+						src="https://www.googletagmanager.com/gtag/js?id=G-K9S0QKYL33"
+					></Script>
+					<Script strategy="afterInteractive">
+						{`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K9S0QKYL33');`}
+					</Script> */}
 					<Component {...pageProps} />
 				</AnimatePresence>
 			) : (
