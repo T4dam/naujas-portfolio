@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Script from 'next/script';
+// import ResumeDownloadModal from '../../modal/resume-download-modal';
+// import { AnimatePresence } from 'framer-motion';
 
 const Details = () => {
+	// const [modalOpen, setModalOpen] = useState(false);
+
+	// const close = () => setModalOpen(false);
+	// const open = () => setModalOpen(true);
+
+	const buttonModal = () => {
+		// modalOpen ? close() : open();
+		frame();
+	};
+
 	let end = Date.now() + 3 * 1000;
 	let colors = ['#9333eb', '#ffffff'];
 	const frame = () => {
@@ -54,7 +66,7 @@ const Details = () => {
 							<Script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></Script>
 							<a href="/T.Delininkaitis.pdf" attributes-list download>
 								<button
-									onClick={() => frame()}
+									onClick={() => buttonModal()}
 									className=" flex items-center shadow-md bg-green-400 py-2 px-5 sm:px-10 uppercase font-medium rounded-[4px] hover:bg-green-400 text-black transform hover:scale-110 transition ease-out duration-300"
 								>
 									<p>Download Resume</p>
@@ -78,6 +90,20 @@ const Details = () => {
 					</div>
 				</div>
 			</div>
+			{/* <AnimatePresence
+				//išjungti bet kokią pradinę animaciją vaikams, esantiems pirmą kartą atvaizduojant komponentą.
+				initial={false}
+				// vienu metu atvaizduokite tik vieną komponentą
+				//Išeinantis komponentas baigs savo išėjimą
+				//animaciją prieš atvaizduojant įeinantį komponentą
+				exitBeforeEnter={true}
+				//įvyksta, kai visi išeinantys nodes baigia animaciją.
+				onExitComplete={() => null}
+			>
+				{modalOpen && (
+					<ResumeDownloadModal modalOpen={modalOpen} handleClose={close} />
+				)}
+			</AnimatePresence> */}
 		</section>
 	);
 };
