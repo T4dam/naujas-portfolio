@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Script from 'next/script';
-// import ResumeDownloadModal from '../../modal/resume-download-modal';
-// import { AnimatePresence } from 'framer-motion';
+import ResumeDownloadModal from '../../modal/resume-download-modal';
+import { AnimatePresence } from 'framer-motion';
 
 const Details = () => {
-	// const [modalOpen, setModalOpen] = useState(false);
+	const [modalOpen, setModalOpen] = useState(false);
 
-	// const close = () => setModalOpen(false);
-	// const open = () => setModalOpen(true);
+	const close = () => setModalOpen(false);
+	const open = () => setModalOpen(true);
 
 	const buttonModal = () => {
-		// modalOpen ? close() : open();
+		modalOpen ? close() : open();
 		frame();
 	};
 
@@ -90,7 +90,7 @@ const Details = () => {
 					</div>
 				</div>
 			</div>
-			{/* <AnimatePresence
+			<AnimatePresence
 				//išjungti bet kokią pradinę animaciją vaikams, esantiems pirmą kartą atvaizduojant komponentą.
 				initial={false}
 				// vienu metu atvaizduokite tik vieną komponentą
@@ -103,7 +103,7 @@ const Details = () => {
 				{modalOpen && (
 					<ResumeDownloadModal modalOpen={modalOpen} handleClose={close} />
 				)}
-			</AnimatePresence> */}
+			</AnimatePresence>
 		</section>
 	);
 };
