@@ -122,7 +122,7 @@ const ResumeDownloadModal = ({ handleClose, title, text }) => {
 							<div class="uppercase tracking-wide text-sm text-[#9333ea] font-semibold">
 								The journey begins
 							</div>
-							<h3>
+							<h3 className=" leading-[20px] sm:leading-[25px]">
 								Congratulations! We are now one step closer to creating
 								something great together
 							</h3>
