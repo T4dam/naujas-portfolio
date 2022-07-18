@@ -77,7 +77,7 @@ const ResumeDownloadModal = ({ handleClose, title, text }) => {
 				initial="hidden"
 				animate="visible"
 				exit="exit"
-				className="bg-white w-[275px] h-[440px] sm:w-[320px] sm:h-[470px] md:w-[630px] md:h-[320px] m-auto rounded-2xl  content-center overflow-hidden relative"
+				className="bg-white w-[275px] h-[460px] sm:w-[320px] sm:h-[470px] md:w-[630px] md:h-[320px] m-auto rounded-2xl  content-center overflow-hidden relative"
 			>
 				<div className="w-full h-full flex flex-col md:flex-row">
 					<div className="w-full h-[29%] md:w-[45%] md:h-full relative">
