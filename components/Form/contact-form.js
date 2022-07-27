@@ -78,6 +78,7 @@ const ContactForm = () => {
 				onSubmit={handleSubmit}
 				action="https://formsubmit.co/t4dam94@gmail.com"
 				className="max-w-[400px]"
+				method="POST"
 			>
 				<div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 					<div className="form-control w-full max-w-xs">
