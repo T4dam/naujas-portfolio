@@ -6,9 +6,18 @@ import tasky from '/public/images/tasky.jpg';
 import dungeon from '/public/images/dungeon.jpg';
 import cover from '/public/images/dogma.jpeg';
 import imgcointrack from '/public/images/imgcointrack.jpg';
+import aiddron from '/public/images/aiddron.jpeg';
 
 const Mywork = () => {
 	const data = [
+		{
+			title: 'Aiddron',
+			intro:
+				'Futuristic AI smart drone website project with 3D interactive elements and AI generated images.',
+			src: aiddron,
+			alt: 'Aiddron page',
+			url: '/work/aiddron',
+		},
 		{
 			title: 'CoinTrack',
 			intro:
