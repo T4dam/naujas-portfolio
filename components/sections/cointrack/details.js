@@ -36,6 +36,17 @@ const Details = () => {
 							Technologies used for this project: HTML, CSS, Javascript,
 							React.js, Coingecko API, React-chartjs-2, react-icons, Axios,
 							React Router, Dompurify, Moment.js
+							<br />
+							<br />
+							<p>
+								You can check out the website here:{' '}
+								<a
+									href="https://cointrack-rho.vercel.app/"
+									className="underline underline-offset-2"
+								>
+									demo page
+								</a>
+							</p>
 						</div>
 					</div>
 				</div>
