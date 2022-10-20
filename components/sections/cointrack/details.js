@@ -38,7 +38,7 @@ const Details = () => {
 							React Router, Dompurify, Moment.js
 							<br />
 							<br />
-							<p>
+							{/* <p>
 								You can check out the website here:{' '}
 								<a
 									href="https://cointrack-rho.vercel.app/"
@@ -46,7 +46,7 @@ const Details = () => {
 								>
 									demo page
 								</a>
-							</p>
+							</p> */}
 						</div>
 					</div>
 				</div>
